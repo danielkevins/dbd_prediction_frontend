@@ -21,9 +21,9 @@ const RiskMap = ({ geoJsonData, riskData }) => {
 
   const getColor = (ir) => {
     const val = parseFloat(ir) || 0;
-    if (val > 55) return '#DC143C'; // Tinggi
-    if (val > 20) return '#EB4C4C';  // Sedang
-    return '#FD7979';                // Rendah
+    if (val > 55) return '#C0392B'; // Tinggi
+    if (val > 20) return '#F39C12';  // Sedang
+    return '#2ECC71';                // Rendah
   };
 
   const style = (feature) => {

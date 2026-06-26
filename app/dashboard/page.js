@@ -90,9 +90,9 @@ export default function Dashboard() {
             Zonasi Risiko Kecamatan
           </h3>
           <div className="flex flex-wrap gap-3 md:gap-4 text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400">
-             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#FD7979]"></span> Rendah</div>
-             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#EB4C4C]"></span> Sedang</div>
-             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#DC143C]"></span> Tinggi</div>
+             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#2ECC71]"></span> Rendah</div>
+             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#F39C12]"></span> Sedang</div>
+             <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#C0392B]"></span> Tinggi</div>
           </div>
         </div>
         {/* Pastikan komponen RiskMap di dalam punya tinggi dinamis, misal h-[300px] md:h-[500px] */}
@@ -146,7 +146,7 @@ export default function Dashboard() {
                 labels: Object.keys(data.ir_distribution),
                 datasets: [{
                   data: Object.values(data.ir_distribution),
-                  backgroundColor: ['#FD7979', '#EB4C4C', '#DC143C'],
+                  backgroundColor: ['#2ECC71', '#F39C12', '#C0392B'],
                   borderWidth: 0
                 }]
               }}
