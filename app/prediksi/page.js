@@ -80,7 +80,7 @@ export default function Prediksi() {
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">Peramalan Kasus DBD</h1>
+          <h1 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">Prediksi Kasus DBD</h1>
           {/* Teks model disesuaikan */}
           <p className="text-sm md:text-base text-red-400 font-medium mt-1">Lihat proyeksi jumlah kasus di masa depan untuk mendukung pengambilan keputusan</p>
         </div>
@@ -89,7 +89,7 @@ export default function Prediksi() {
           disabled={loading}
           className="w-full md:w-auto justify-center bg-red-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl hover:bg-red-600 transition-all shadow-xl shadow-red-100 font-bold flex items-center gap-2 disabled:bg-red-200 text-sm md:text-base"
         >
-          {loading ? "Menganalisis..." : <><Sparkles size={20} /> Mulai Prediksi</>}
+          {loading ? "Menganalisis..." : <><Sparkles size={20} />Prediksi</>}
         </button>
       </div>
 
@@ -191,7 +191,7 @@ export default function Prediksi() {
           <div className="bg-rose-50 p-6 md:p-8 rounded-full mb-4 md:mb-6 text-red-300 animate-pulse">
             <Sparkles size={48} className="md:w-16 md:h-16" />
           </div>
-          <h2 className="text-xl md:text-2xl font-black text-slate-800 mb-2">Mulai Peramalan</h2>
+          <h2 className="text-xl md:text-2xl font-black text-slate-800 mb-2">Mulai Prediksi</h2>
           <p className="text-xs md:text-sm text-slate-400 max-w-sm leading-relaxed px-4">
            Klik tombol di atas untuk memproses data dan melihat hasil prediksi tren kasus DBD.
 
